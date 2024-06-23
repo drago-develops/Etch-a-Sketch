@@ -1,0 +1,19 @@
+html body{
+    background-color: darkblue;
+    display: flex;
+    flex-direction: row;
+    
+}
+#sidePanel{
+    width: 25%;
+    height: 95vh;
+    border: 5px solid green;
+    border-radius: 15px;
+    
+}
+#gridCont{
+    width: 75%;
+    height: 95vh;
+    border: 5px solid darkgoldenrod;
+    border-radius: 15px;
+}
