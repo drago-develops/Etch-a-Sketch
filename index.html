@@ -10,12 +10,17 @@
 <body>
     <div id="sidePanel">
         <div>
-            <input type="range" id="noOfGrids" name="gridSlider" min="16" max="100" />
+            <input type="range" id="gridSlider" name="gridSlider" min="16" max="100" value="16"/>
             <label for="gridSlider">No of squares</label>
+            <button onclick="noOfSquares()">submit</button>
+            <p>No of squares:</p>
+            <p id="output">16</p>
+
         </div>
         
     </div>
-    <div id="gridCont">
+    <div id="drawingSpace">
+        <div id="cointainer"></div>
         
     </div>
 </body>
