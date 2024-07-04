@@ -20,15 +20,18 @@ html body{
 #cointainer{
     height: 800px;
     width: 800px ;
-    max-width: 800px;
-    max-height: 800px;
     border: 5px solid darkgray;
     margin: 10px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: stretch;
+    align-self: stretch;
+    flex-wrap: wrap
 }
+
 .sqr{
-    height: 50px;
-    width: 50px;
+    height: 5px;
+    width:  5px;
     border: 1px solid black;
+    flex-shrink: 1;
 }
