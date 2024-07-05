@@ -2,7 +2,7 @@ function noOfSquares(){
     var element =  document.getElementsByClassName("sqr");
     if (typeof(element) != 'undefined' && element != null)
     {   
-        document.querySelectorAll(".sqr").forEach(el=>el.remove());
+        document.querySelectorAll(".toBeDeleted").forEach(el=>el.remove());
         console.log("deleted")
     };
     var val = document.getElementById("gridSlider").value;
@@ -11,6 +11,7 @@ function noOfSquares(){
         console.log(i);
         const newCont = document.createElement("div");
         newCont.setAttribute("id", `cont${i}`);
+        newCont.setAttribute("class","toBeDeleted")
         document.getElementById("cointainer").appendChild(newCont);
         for (j=1; j<=val; j++){
             const newDiv = document.createElement("div");
