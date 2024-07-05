@@ -20,3 +20,14 @@ function noOfSquares(){
     };
     
 }
+function changeDimentionsSqr(){
+    let sqrDivs = document.getElementsByClassName("sqr");
+    var value = document.getElementById("gridSlider").value;
+    console.log(value)
+    for(var i = 0; i<sqrDivs.length; i++){
+        let pixel = 800/value;
+        console.log(pixel)
+        sqrDivs[i].style.height = `${pixel}px`;
+        sqrDivs[i].style.width = `${pixel}px`;
+    };
+};

@@ -30,8 +30,7 @@ html body{
 }
 
 .sqr{
-    height: 5px;
-    width:  5px;
-    border: 1px solid black;
-    flex-shrink: 1;
+    /*height: 5.5px;
+    width: 5.5px;
+    border: 1px solid black;*/
 }
