@@ -9,7 +9,10 @@ html body{
     height: 95vh;
     border: 5px solid green;
     border-radius: 15px;
-    
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
 }
 #drawingSpace{
     width: 75%;
@@ -22,6 +25,7 @@ html body{
     width: 800px ;
     border: 5px solid darkgray;
     margin: 10px;
+    background-color: lightgray;
     display: flex;
     justify-content: stretch;
     align-items: stretch;
