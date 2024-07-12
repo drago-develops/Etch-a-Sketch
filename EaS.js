@@ -82,3 +82,12 @@ function clearSheet(){
         element.style.backgroundColor = 'lightgray';
     })
 };
+
+function rubberEraser(){
+    let squares = document.getElementsByClassName('sqr');
+    for(let i = 0; i < squares.length; i++){
+        squares[i].addEventListener('mouseover', function() {
+            this.style.backgroundColor = 'lightgray';
+        });
+    }
+}
