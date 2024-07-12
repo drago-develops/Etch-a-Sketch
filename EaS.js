@@ -75,3 +75,10 @@ function rainbowPencilHovering(){
         });
     }
 }
+
+function clearSheet(){
+    let square = document.querySelectorAll('.sqr');
+    square.forEach(function(element){
+        element.style.backgroundColor = 'lightgray';
+    })
+};
