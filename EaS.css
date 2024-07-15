@@ -33,12 +33,6 @@ html body{
     flex-wrap: wrap
 }
 
-.sqr{
-    /*height: 5.5px;
-    width: 5.5px;
-    border: 1px solid black;*/
-}
-
 .button{
     margin: 0.5em;
   padding: 0.5em 1em;
