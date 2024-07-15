@@ -1,3 +1,7 @@
+setInterval(alert('Please use the slider to create drawing pad, and then select one of the coloring tools'),2500)
+alert('use your cursor and left mouse button at the same time to draw or erase')
+
+
 function noOfSquares(){
     var element =  document.getElementsByClassName("sqr");
     if (typeof(element) != 'undefined' && element != null)
