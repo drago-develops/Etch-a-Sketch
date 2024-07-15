@@ -73,11 +73,15 @@ function pencilHovering(){
 function rainbowPencilHovering(){
     let squares = document.getElementsByClassName('sqr');
     for(let i = 0; i < squares.length; i++){
-        squares[i].addEventListener('mousemove' && 'mousedown', function() {
-            let colorRed = Math.floor(Math.random() * 256);
-            let colorGreen = Math.floor(Math.random() * 256);
-            let colorBlue= Math.floor(Math.random() * 256);
-            this.style.backgroundColor = `rgb(${colorRed},${colorGreen},${colorBlue})`;
+        squares[i].addEventListener('mousedown', () => isDrawing = true);
+        squares[i].addEventListener('mouseup', () => isDrawing = false);
+        squares[i].addEventListener('mousemove', function() {
+            if (isDrawing) {
+                let colorRed = Math.floor(Math.random() * 256);
+                let colorGreen = Math.floor(Math.random() * 256);
+                let colorBlue= Math.floor(Math.random() * 256);
+                this.style.backgroundColor = `rgb(${colorRed},${colorGreen},${colorBlue})`;
+            }
         });
     }
 }
@@ -92,8 +96,12 @@ function clearSheet(){
 function rubberEraser(){
     let squares = document.getElementsByClassName('sqr');
     for(let i = 0; i < squares.length; i++){
-        squares[i].addEventListener('mousemove' && 'mousedown', function() {
-            this.style.backgroundColor = 'lightgray';
+        squares[i].addEventListener('mousedown', () => isDrawing = true);
+        squares[i].addEventListener('mouseup', () => isDrawing = false);
+        squares[i].addEventListener('mousemove', function() {
+            if (isDrawing) {
+                this.style.backgroundColor = 'lightgray';
+            }
         });
     }
 }
